@@ -1,0 +1,12 @@
+{
+	"apiVersion": 2,
+	"name": "custom-block/card-block",
+	"title": "Card",
+	"category": "wp-bootstrap-blocks",
+	"description": "Card without border.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "custom-block-card",
+	"editorScript": "file:./build/index.js"
+}

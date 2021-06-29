@@ -1,0 +1,59 @@
+/** Import Bootstrap functions */
+@import "~bootstrap/scss/functions";
+
+// Bootstrap navbar fix (https://git.io/fADqW)
+$navbar-dark-toggler-icon-bg: none;
+$navbar-light-toggler-icon-bg: none;
+
+// Wordpress admin bar heights.
+$admin-bar-height-small: 46px;
+$admin-bar-height-large: 32px;
+
+// // Define brand colours.
+// $brand-primary: #;
+// $brand-accent: #;
+// $theme-colors: (
+//   "brand-primary": $brand-primary,
+//   "brand-accent": $brand-primary,
+// );
+// $primary: $brand-primary;
+
+// Reduce headings font sizes.
+$h1-font-size: 2.5rem;
+$h2-font-size: 2rem;
+$h3-font-size: 1.35rem;
+$h4-font-size: 1.25rem;
+$h5-font-size: 1.1rem;
+$h6-font-size: 1rem;
+
+// // Style headings.
+// $headings-font-family: $font-family-sans-serif;
+// $headings-font-weight: bold;
+// $headings-color: lighten($blue, 20%);
+
+// Style navbar.
+$navbar-nav-link-padding-x: 1rem;
+$navbar-toggler-padding-y: 0.25rem;
+$navbar-toggler-padding-x: 0.75rem;
+$navbar-toggler-border-radius: 0;
+$navbar-height: 50px;
+$navbar-height-small: $navbar-height;
+$navbar-height-large: 72px;
+// $navbar-light-color: $theme-primary;
+// $navbar-light-hover-color: darken($theme-primary, 10%);
+// $navbar-light-active-color: darken($theme-primary, 20%);
+
+// Remove rounded borders on buttons.
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm: 0;
+
+// Make blockquote text as large as body text.
+$blockquote-font-size: $font-size-base;
+
+// Remove the xl container width.
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+);

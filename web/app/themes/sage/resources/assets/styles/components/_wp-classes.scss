@@ -1,0 +1,123 @@
+/// WordPress Generated Classes
+/// @see http://codex.wordpress.org/CSS#WordPress_Generated_Classes
+
+// Top level blocks are treated as containers.
+.main > .content {
+  > *:not(.alignfull) {
+    @include make-container();
+    @include make-container-max-widths();
+  }
+
+  // Remove the side padding because the columns block's children provide
+  // their own.
+  > .wp-block-columns {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.wp-block-image {
+  &:first-child:last-child {
+    margin-bottom: 0;
+  }
+
+  // Image should be constrained by container's width and should maintain
+  // its aspect ratio.
+  img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+  }
+
+  figcaption {
+    margin-top: 15px;
+  }
+}
+
+// Responsive iframe.
+.wp-block-embed__wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.4%;
+  overflow: hidden;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Responsive padding on cover block.
+.wp-block-cover {
+  padding: $spacer !important;
+
+  @include media-breakpoint-up(sm) {
+    padding: $spacer * 1.5 !important;
+  }
+
+  @include media-breakpoint-up(lg) {
+    padding: $spacer * 3 !important;
+  }
+
+  // Override Wordpress default style.
+  .wp-block-cover__inner-container {
+    width: auto;
+  }
+}
+
+/// Media alignment
+.alignnone {
+  margin-left: 0;
+  margin-right: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.aligncenter {
+  display: block;
+  margin: ($spacer / 2) auto;
+  height: auto;
+}
+
+.alignleft,
+.alignright {
+  margin-bottom: ($spacer / 2);
+  height: auto;
+}
+
+@include media-breakpoint-up(sm) {
+  .alignleft {
+    float: left;
+    margin-right: ($spacer / 2);
+  }
+
+  .alignright {
+    float: right;
+    margin-left: ($spacer / 2);
+  }
+}
+
+/// Captions
+.wp-caption {
+  @extend .figure;
+}
+
+.wp-caption img {
+  @extend .figure-img;
+  @extend .img-fluid;
+}
+
+.wp-caption-text {
+  @extend .figure-caption;
+}
+
+/// Text meant only for screen readers
+.screen-reader-text {
+  @extend .sr-only;
+  @extend .sr-only-focusable;
+}

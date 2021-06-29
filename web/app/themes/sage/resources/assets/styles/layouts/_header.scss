@@ -1,0 +1,7 @@
+.navbar-top {
+  min-height: $navbar-height-small;
+
+  @include media-breakpoint-up(lg) {
+    min-height: $navbar-height-large;
+  }
+}

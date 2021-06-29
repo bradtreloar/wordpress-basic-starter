@@ -1,0 +1,27 @@
+// Replace link underline with dotted bottom border
+// for inline links in text body.
+main {
+  a:not(.button):not(.text-decoration-none) {
+    text-decoration: none !important;
+    border-bottom: dotted 1px $primary;
+  }
+}
+
+// Increase letter spacing in navbar link text.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: 0.03em;
+}
+
+// Increase letter spacing in navbar link text
+// and reduce font size to compensate.
+.navbar-nav {
+  .nav-link {
+    font-size: 0.9em;
+    letter-spacing: 0.03em;
+  }
+}
