@@ -1,4 +1,3 @@
-{{-- Generate favicon files at https://www.favicon-generator.org/ --}}
 @php $favicon_dir = get_theme_file_uri() . '/resources/assets/images/favicon'; @endphp
 <link rel="apple-touch-icon" sizes="57x57" href="{{ $favicon_dir }}/apple-icon-57x57.png">
 <link rel="apple-touch-icon" sizes="60x60" href="{{ $favicon_dir }}/apple-icon-60x60.png">
@@ -14,5 +13,5 @@
 <link rel="icon" type="image/png" sizes="96x96" href="{{ $favicon_dir }}/favicon-96x96.png">
 <link rel="icon" type="image/png" sizes="16x16" href="{{ $favicon_dir }}/favicon-16x16.png">
 <link rel="manifest" href="{{ $favicon_dir }}/manifest.json">
+<meta name="msapplication-TileColor" content="#374083">
 <meta name="msapplication-TileImage" content="{{ $favicon_dir }}/ms-icon-144x144.png">
-<meta name="msapplication-TileColor" content="#ffffff">
