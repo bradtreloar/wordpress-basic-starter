@@ -5,7 +5,7 @@
   <div class="navbar-top d-flex align-items-center bg-white text-light">
     <div class="container px-0">
       <div class="navbar py-0 justify-between flex-nowrap">
-        <a class="d-flex flex-shrink-1 flex-nowrap align-items-center" href="{{ home_url('/') }}">
+        <a class="d-flex flex-shrink-1 flex-nowrap align-items-center py-2" href="{{ home_url('/') }}">
           <img class="d-block flex-shrink-1 mw-100 pr-3" src="/app/themes/sage/resources/assets/images/logo.svg" alt="{{ bloginfo( 'name' ) }}" height="48">
         </a>
         <div class="d-flex flex-none">
@@ -16,7 +16,7 @@
             ]) !!}
           @endif
           @if (has_nav_menu('main_menu'))
-          <button class="navbar-toggler d-block d-lg-none text-light" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler d-block d-lg-none" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
             <svg class="icon" width="24" height="24"><use xlink:href="#nav" /></svg>
           </button>
           @endif
