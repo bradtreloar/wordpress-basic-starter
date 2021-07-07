@@ -132,3 +132,12 @@
 .wp-block-table > table {
   @extend .table;
 }
+
+/// Blockquote
+.wp-block-quote {
+  @extend .blockquote;
+
+  cite {
+    @extend .blockquote-footer;
+  }
+}

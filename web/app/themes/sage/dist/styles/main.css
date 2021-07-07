@@ -658,14 +658,16 @@ mark,
 
 /* line 112, node_modules/bootstrap/scss/_type.scss */
 
-.blockquote {
+.blockquote,
+.wp-block-quote {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
 /* line 117, node_modules/bootstrap/scss/_type.scss */
 
-.blockquote-footer {
+.blockquote-footer,
+.wp-block-quote cite {
   display: block;
   font-size: 80%;
   color: #6c757d;
@@ -673,7 +675,8 @@ mark,
 
 /* line 122, node_modules/bootstrap/scss/_type.scss */
 
-.blockquote-footer::before {
+.blockquote-footer::before,
+.wp-block-quote cite::before {
   content: "\2014\A0";
 }
 
