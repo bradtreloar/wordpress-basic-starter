@@ -16684,7 +16684,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 
 /* line 6, resources/assets/styles/components/_wp-classes.scss */
 
-.main > .content > *:not(.alignfull) {
+.main > .content > *:not(.alignfull):not(.alignwide) {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -16695,7 +16695,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 @media (min-width: 576px) {
   /* line 6, resources/assets/styles/components/_wp-classes.scss */
 
-  .main > .content > *:not(.alignfull) {
+  .main > .content > *:not(.alignfull):not(.alignwide) {
     max-width: 540px;
   }
 }
@@ -16703,7 +16703,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 @media (min-width: 768px) {
   /* line 6, resources/assets/styles/components/_wp-classes.scss */
 
-  .main > .content > *:not(.alignfull) {
+  .main > .content > *:not(.alignfull):not(.alignwide) {
     max-width: 720px;
   }
 }
@@ -16711,32 +16711,74 @@ body.chocolat-open > .chocolat-image-wrapper {
 @media (min-width: 992px) {
   /* line 6, resources/assets/styles/components/_wp-classes.scss */
 
-  .main > .content > *:not(.alignfull) {
+  .main > .content > *:not(.alignfull):not(.alignwide) {
     max-width: 960px;
   }
 }
 
-/* line 12, resources/assets/styles/components/_wp-classes.scss */
+/* line 11, resources/assets/styles/components/_wp-classes.scss */
+
+.main > .content > *.alignwide {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+
+  .main > .content > *.alignwide {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+
+  .main > .content > *.alignwide {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+
+  .main > .content > *.alignwide {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+
+  .main > .content > *.alignwide {
+    max-width: 1140px;
+  }
+}
+
+/* line 24, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > ul,
 .main > .content > ol {
   padding-left: 40px !important;
 }
 
-/* line 19, resources/assets/styles/components/_wp-classes.scss */
+/* line 31, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > .wp-block-columns {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 26, resources/assets/styles/components/_wp-classes.scss */
+/* line 38, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image:first-child:last-child {
   margin-bottom: 0;
 }
 
-/* line 32, resources/assets/styles/components/_wp-classes.scss */
+/* line 44, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image img {
   display: block;
@@ -16744,13 +16786,13 @@ body.chocolat-open > .chocolat-image-wrapper {
   max-width: 100%;
 }
 
-/* line 38, resources/assets/styles/components/_wp-classes.scss */
+/* line 50, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image figcaption {
   margin-top: 15px;
 }
 
-/* line 44, resources/assets/styles/components/_wp-classes.scss */
+/* line 56, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper {
   position: relative;
@@ -16761,7 +16803,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   overflow: hidden;
 }
 
-/* line 52, resources/assets/styles/components/_wp-classes.scss */
+/* line 64, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper iframe {
   position: absolute;
@@ -16771,14 +16813,14 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: 100%;
 }
 
-/* line 62, resources/assets/styles/components/_wp-classes.scss */
+/* line 74, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover {
   padding: 1rem !important;
 }
 
 @media (min-width: 576px) {
-  /* line 62, resources/assets/styles/components/_wp-classes.scss */
+  /* line 74, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 1.5rem !important;
@@ -16786,20 +16828,20 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 992px) {
-  /* line 62, resources/assets/styles/components/_wp-classes.scss */
+  /* line 74, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 3rem !important;
   }
 }
 
-/* line 74, resources/assets/styles/components/_wp-classes.scss */
+/* line 86, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover .wp-block-cover__inner-container {
   width: auto;
 }
 
-/* line 80, resources/assets/styles/components/_wp-classes.scss */
+/* line 92, resources/assets/styles/components/_wp-classes.scss */
 
 .alignnone {
   margin-left: 0;
@@ -16808,7 +16850,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 87, resources/assets/styles/components/_wp-classes.scss */
+/* line 99, resources/assets/styles/components/_wp-classes.scss */
 
 .aligncenter {
   display: block;
@@ -16816,7 +16858,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 93, resources/assets/styles/components/_wp-classes.scss */
+/* line 105, resources/assets/styles/components/_wp-classes.scss */
 
 .alignleft,
 .alignright {
@@ -16825,14 +16867,14 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 576px) {
-  /* line 100, resources/assets/styles/components/_wp-classes.scss */
+  /* line 112, resources/assets/styles/components/_wp-classes.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.5rem;
   }
 
-  /* line 105, resources/assets/styles/components/_wp-classes.scss */
+  /* line 117, resources/assets/styles/components/_wp-classes.scss */
 
   .alignright {
     float: right;

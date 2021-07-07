@@ -68,9 +68,9 @@ add_action(
          */
         register_nav_menus(
             [
-            'main_menu' => __('Main menu', 'sage'),
-            'contact_menu' => __('Contact menu', 'sage'),
-            'footer_menu' => __('Footer menu', 'sage'),
+                'main_menu' => __('Main menu', 'sage'),
+                'contact_menu' => __('Contact menu', 'sage'),
+                'footer_menu' => __('Footer menu', 'sage'),
             ]
         );
 
@@ -80,6 +80,12 @@ add_action(
          * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
          */
         add_theme_support('post-thumbnails');
+
+        /**
+         * Enable full and wide alignment
+         */
+        add_theme_support('align-wide');
+        add_theme_support('align-full');
 
         /**
          * Enable HTML5 markup support
@@ -112,21 +118,21 @@ add_action(
     'widgets_init',
     function () {
         $config = [
-        'before_widget' => '<section class="widget %1$s %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h3>',
-        'after_title'   => '</h3>'
+            'before_widget' => '<section class="widget %1$s %2$s">',
+            'after_widget'  => '</section>',
+            'before_title'  => '<h3>',
+            'after_title'   => '</h3>'
         ];
         register_sidebar(
             [
-            'name'          => __('Primary', 'sage'),
-            'id'            => 'sidebar-primary'
+                'name'          => __('Primary', 'sage'),
+                'id'            => 'sidebar-primary'
             ] + $config
         );
         register_sidebar(
             [
-            'name'          => __('Footer', 'sage'),
-            'id'            => 'sidebar-footer'
+                'name'          => __('Footer', 'sage'),
+                'id'            => 'sidebar-footer'
             ] + $config
         );
     }

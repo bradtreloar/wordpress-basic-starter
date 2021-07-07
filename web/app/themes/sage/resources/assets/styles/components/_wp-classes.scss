@@ -3,9 +3,21 @@
 
 // Top level blocks are treated as containers.
 .main > .content {
-  > *:not(.alignfull) {
+  > *:not(.alignfull):not(.alignwide) {
     @include make-container();
     @include make-container-max-widths();
+  }
+
+  > *.alignwide {
+    @include make-container();
+    @include make-container-max-widths(
+      map-merge(
+        $container-max-widths,
+        (
+          xl: 1140px,
+        )
+      )
+    );
   }
 
   // Restore default list padding that was removed by make-container.
