@@ -1473,6 +1473,13 @@ chardet@^0.4.0:
   resolved "https://registry.yarnpkg.com/chardet/-/chardet-0.4.2.tgz#b5473b33dc97c424e5d98dc87d55d4d8a29c8bf2"
   integrity sha1-tUc7M9yXxCTl2Y3IfVXU2KKci/I=
 
+chocolat@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/chocolat/-/chocolat-1.0.4.tgz#551aade54205bb4355e17248e25469d0a32185fb"
+  integrity sha512-Wd0F+lVTtZN3soDZwg+WBxrEFD6YNBpzWgFNbR6wyhSsy9nrgasZg+RxNMsuripc8ufgoD9/QS21XvKoZ4XdYg==
+  dependencies:
+    es6-promise "^4.2.5"
+
 chokidar@1.7.0, chokidar@^1.6.1:
   version "1.7.0"
   resolved "https://registry.yarnpkg.com/chokidar/-/chokidar-1.7.0.tgz#798e689778151c8076b4b360e5edd28cda2bb468"
@@ -2993,6 +3000,11 @@ es6-map@^0.1.3:
     es6-set "~0.1.5"
     es6-symbol "~3.1.1"
     event-emitter "~0.3.5"
+
+es6-promise@^4.2.5:
+  version "4.2.8"
+  resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
+  integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
 
 es6-set@~0.1.5:
   version "0.1.5"

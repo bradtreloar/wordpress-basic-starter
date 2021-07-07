@@ -1,8 +1,9 @@
+import Chocolat from "chocolat";
+
 export default {
-  init() {
-    // JavaScript to be fired on all pages
-  },
+  init() {},
   finalize() {
-    // JavaScript to be fired on all pages, after page specific JS is fired
+    // Initialise Chocolat on all gallery blocks.
+    Chocolat(document.querySelectorAll(".blocks-gallery-item a"), {});
   },
 };
