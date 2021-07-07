@@ -2532,7 +2532,8 @@ pre code {
 
 /* line 5, node_modules/bootstrap/scss/_tables.scss */
 
-.table {
+.table,
+.wp-block-table > table {
   width: 100%;
   margin-bottom: 1rem;
   color: #212529;
@@ -2541,7 +2542,9 @@ pre code {
 /* line 11, node_modules/bootstrap/scss/_tables.scss */
 
 .table th,
-.table td {
+.wp-block-table > table th,
+.table td,
+.wp-block-table > table td {
   padding: 0.75rem;
   vertical-align: top;
   border-top: 1px solid #dee2e6;
@@ -2549,14 +2552,16 @@ pre code {
 
 /* line 18, node_modules/bootstrap/scss/_tables.scss */
 
-.table thead th {
+.table thead th,
+.wp-block-table > table thead th {
   vertical-align: bottom;
   border-bottom: 2px solid #dee2e6;
 }
 
 /* line 23, node_modules/bootstrap/scss/_tables.scss */
 
-.table tbody + tbody {
+.table tbody + tbody,
+.wp-block-table > table tbody + tbody {
   border-top: 2px solid #dee2e6;
 }
 
@@ -2872,7 +2877,8 @@ pre code {
 
 /* line 114, node_modules/bootstrap/scss/_tables.scss */
 
-.table .thead-dark th {
+.table .thead-dark th,
+.wp-block-table > table .thead-dark th {
   color: #fff;
   background-color: #343a40;
   border-color: #454d55;
@@ -2880,7 +2886,8 @@ pre code {
 
 /* line 122, node_modules/bootstrap/scss/_tables.scss */
 
-.table .thead-light th {
+.table .thead-light th,
+.wp-block-table > table .thead-light th {
   color: #495057;
   background-color: #e9ecef;
   border-color: #dee2e6;
@@ -16170,14 +16177,17 @@ a.text-dark:focus {
 
   /* line 107, node_modules/bootstrap/scss/_print.scss */
 
-  .table {
+  .table,
+  .wp-block-table > table {
     border-collapse: collapse !important;
   }
 
   /* line 110, node_modules/bootstrap/scss/_print.scss */
 
   .table td,
-  .table th {
+  .wp-block-table > table td,
+  .table th,
+  .wp-block-table > table th {
     background-color: #fff !important;
   }
 
@@ -16205,7 +16215,8 @@ a.text-dark:focus {
 
   /* line 134, node_modules/bootstrap/scss/_print.scss */
 
-  .table .thead-dark th {
+  .table .thead-dark th,
+  .wp-block-table > table .thead-dark th {
     color: inherit;
     border-color: #dee2e6;
   }
@@ -16702,20 +16713,27 @@ body.chocolat-open > .chocolat-image-wrapper {
   }
 }
 
-/* line 13, resources/assets/styles/components/_wp-classes.scss */
+/* line 12, resources/assets/styles/components/_wp-classes.scss */
+
+.main > .content > ul,
+.main > .content > ol {
+  padding-left: 40px !important;
+}
+
+/* line 19, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > .wp-block-columns {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 20, resources/assets/styles/components/_wp-classes.scss */
+/* line 26, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image:first-child:last-child {
   margin-bottom: 0;
 }
 
-/* line 26, resources/assets/styles/components/_wp-classes.scss */
+/* line 32, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image img {
   display: block;
@@ -16723,13 +16741,13 @@ body.chocolat-open > .chocolat-image-wrapper {
   max-width: 100%;
 }
 
-/* line 32, resources/assets/styles/components/_wp-classes.scss */
+/* line 38, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image figcaption {
   margin-top: 15px;
 }
 
-/* line 38, resources/assets/styles/components/_wp-classes.scss */
+/* line 44, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper {
   position: relative;
@@ -16740,7 +16758,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   overflow: hidden;
 }
 
-/* line 46, resources/assets/styles/components/_wp-classes.scss */
+/* line 52, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper iframe {
   position: absolute;
@@ -16750,14 +16768,14 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: 100%;
 }
 
-/* line 56, resources/assets/styles/components/_wp-classes.scss */
+/* line 62, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover {
   padding: 1rem !important;
 }
 
 @media (min-width: 576px) {
-  /* line 56, resources/assets/styles/components/_wp-classes.scss */
+  /* line 62, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 1.5rem !important;
@@ -16765,20 +16783,20 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 992px) {
-  /* line 56, resources/assets/styles/components/_wp-classes.scss */
+  /* line 62, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 3rem !important;
   }
 }
 
-/* line 68, resources/assets/styles/components/_wp-classes.scss */
+/* line 74, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover .wp-block-cover__inner-container {
   width: auto;
 }
 
-/* line 74, resources/assets/styles/components/_wp-classes.scss */
+/* line 80, resources/assets/styles/components/_wp-classes.scss */
 
 .alignnone {
   margin-left: 0;
@@ -16787,7 +16805,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 81, resources/assets/styles/components/_wp-classes.scss */
+/* line 87, resources/assets/styles/components/_wp-classes.scss */
 
 .aligncenter {
   display: block;
@@ -16795,7 +16813,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 87, resources/assets/styles/components/_wp-classes.scss */
+/* line 93, resources/assets/styles/components/_wp-classes.scss */
 
 .alignleft,
 .alignright {
@@ -16804,14 +16822,14 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 576px) {
-  /* line 94, resources/assets/styles/components/_wp-classes.scss */
+  /* line 100, resources/assets/styles/components/_wp-classes.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.5rem;
   }
 
-  /* line 99, resources/assets/styles/components/_wp-classes.scss */
+  /* line 105, resources/assets/styles/components/_wp-classes.scss */
 
   .alignright {
     float: right;

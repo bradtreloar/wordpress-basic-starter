@@ -7339,7 +7339,7 @@ Router.prototype.loadEvents = function loadEvents () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   init: function init() {},
   finalize: function finalize() {
-    console.log("debug message");
+    // Initialise Chocolat on all gallery blocks.
     Object(__WEBPACK_IMPORTED_MODULE_0_chocolat__["a" /* default */])(document.querySelectorAll(".blocks-gallery-item a"), {});
   },
 });
