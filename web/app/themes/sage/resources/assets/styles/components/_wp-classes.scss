@@ -8,6 +8,12 @@
     @include make-container-max-widths();
   }
 
+  // Restore default list padding that was removed by make-container.
+  > ul,
+  > ol {
+    padding-left: 40px !important;
+  }
+
   // Remove the side padding because the columns block's children provide
   // their own.
   > .wp-block-columns {
@@ -120,4 +126,9 @@
 .screen-reader-text {
   @extend .sr-only;
   @extend .sr-only-focusable;
+}
+
+/// Tables
+.wp-block-table > table {
+  @extend .table;
 }
