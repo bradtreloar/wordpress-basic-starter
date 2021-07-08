@@ -60,41 +60,53 @@
 /******/ 	__webpack_require__.p = "/app/themes/sage/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 14);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 0:
-/***/ (function(module, exports) {
-
-module.exports = jQuery;
-
-/***/ }),
-
-/***/ 17:
+/***/ 14:
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(18);
+__webpack_require__(15);
+module.exports = __webpack_require__(16);
 
 
 /***/ }),
 
-/***/ 18:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ 15:
+/***/ (function(module, exports) {
 
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_jquery___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_jquery__);
-
-
-wp.customize('blogname', function (value) {
-  value.bind(function (to) { return __WEBPACK_IMPORTED_MODULE_0_jquery___default()('.brand').text(to); });
+/*
+ * Unregister unsupported blocks.
+ */
+wp.domReady(function () {
+  var unsupportedCoreBlocks = [
+    "buttons",
+    "columns",
+    "calendar",
+    "categories",
+    "rss" ];
+  unsupportedCoreBlocks.forEach(function (blockName) {
+    wp.blocks.unregisterBlockType(("core/" + blockName));
+  });
+  var supportedEmbedBlocks = ["youtube"];
+  wp.blocks.getBlockVariations("core/embed").forEach(function (blockVariation) {
+    if (!supportedEmbedBlocks.includes(blockVariation.name)) {
+      wp.blocks.unregisterBlockVariation("core/embed", blockVariation.name);
+    }
+  });
 });
 
+
+/***/ }),
+
+/***/ 16:
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 
 /******/ });
-//# sourceMappingURL=customizer.js.map
+//# sourceMappingURL=editor.js.map

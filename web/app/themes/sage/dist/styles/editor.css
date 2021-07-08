@@ -1,0 +1,35 @@
+/*
+ * Main column width
+ * This changes it from the default 580px to 960px
+ */
+
+/* line 5, stdin */
+
+.wp-block {
+  max-width: 960px;
+}
+
+/*
+ * Width of "wide" blocks
+ * This changes it from the default 1080px to 1440px
+ */
+
+/* line 13, stdin */
+
+.wp-block[data-align="wide"] {
+  max-width: 1440px;
+}
+
+/*
+ * Editor body colors.
+ */
+
+/* line 20, stdin */
+
+.block-editor-writing-flow {
+  color: #343a40;
+  background-color: #f8f9fa;
+}
+
+
+/*# sourceMappingURL=editor.css.map*/

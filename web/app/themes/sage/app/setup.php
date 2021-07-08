@@ -7,6 +7,7 @@ use Roots\Sage\Container;
 use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
 use Roots\Sage\Template\BladeProvider;
+use WP_Block_Type_Registry;
 
 /**
  * Theme assets
@@ -30,7 +31,14 @@ add_action(
 add_action(
     'enqueue_block_editor_assets',
     function () {
-        // wp_enqueue_style('sage/editor.css', asset_path('styles/editor.css'), false, null);
+        wp_enqueue_style('sage/editor.css', asset_path('styles/editor.css'), false, null);
+        wp_enqueue_script(
+            'sage/editor.js',
+            asset_path('scripts/editor.js'),
+            ['wp-blocks', 'wp-dom-ready', 'wp-edit-post'],
+            null,
+            true
+        );
         wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
         wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
     },
@@ -202,5 +210,26 @@ add_action(
         return [
             'walker' => $walker
         ] + $args;
+    }
+);
+
+/**
+ * Unregister unsupported blocks.
+ */
+add_action(
+    'init',
+    function () {
+        $unsupported_blocks = [
+            'core/button',
+            'core/buttons',
+            'core/columns',
+        ];
+
+        foreach ($unsupported_blocks as $block_name) {
+            $block_type_registry = WP_Block_Type_Registry::get_instance();
+            if ($block_type_registry->is_registered($block_name)) {
+                $block_type_registry->unregister($block_name);
+            }
+        }
     }
 );
