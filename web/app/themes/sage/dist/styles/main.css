@@ -1,7 +1,5 @@
 /** Import Bootstrap functions */
 
-/** Import everything from autoload */
-
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
@@ -16593,15 +16591,6 @@ body.chocolat-open > .chocolat-image-wrapper {
     opacity: 0;
 }
 */
-
-/**
- * Import npm dependencies
- *
- * Prefix your imports with `~` to grab from node_modules/
- * @see https://github.com/webpack-contrib/sass-loader#imports
- */
-
-/** Import theme styles */
 
 /* line 1, resources/assets/styles/components/_buttons.scss */
 
