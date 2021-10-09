@@ -16614,6 +16614,20 @@ body.chocolat-open > .chocolat-image-wrapper {
   font-weight: normal;
 }
 
+/* line 1, resources/assets/styles/components/_navbar.scss */
+
+.navbar-top {
+  min-height: 50px;
+}
+
+@media (min-width: 992px) {
+  /* line 1, resources/assets/styles/components/_navbar.scss */
+
+  .navbar-top {
+    min-height: 72px;
+  }
+}
+
 @media (max-width: 991.98px) {
   /* line 2, resources/assets/styles/components/_offcanvas.scss */
 
@@ -16773,15 +16787,23 @@ body.chocolat-open > .chocolat-image-wrapper {
   display: block;
   height: auto;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* line 50, resources/assets/styles/components/_wp-classes.scss */
+/* line 53, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image figcaption {
   margin-top: 15px;
 }
 
-/* line 56, resources/assets/styles/components/_wp-classes.scss */
+/* line 59, resources/assets/styles/components/_wp-classes.scss */
+
+.wp-block-image.aligncenter figcaption {
+  text-align: center;
+}
+
+/* line 66, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper {
   position: relative;
@@ -16792,7 +16814,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   overflow: hidden;
 }
 
-/* line 64, resources/assets/styles/components/_wp-classes.scss */
+/* line 74, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper iframe {
   position: absolute;
@@ -16802,14 +16824,14 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: 100%;
 }
 
-/* line 74, resources/assets/styles/components/_wp-classes.scss */
+/* line 84, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover {
   padding: 1rem !important;
 }
 
 @media (min-width: 576px) {
-  /* line 74, resources/assets/styles/components/_wp-classes.scss */
+  /* line 84, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 1.5rem !important;
@@ -16817,20 +16839,20 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 992px) {
-  /* line 74, resources/assets/styles/components/_wp-classes.scss */
+  /* line 84, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 3rem !important;
   }
 }
 
-/* line 86, resources/assets/styles/components/_wp-classes.scss */
+/* line 96, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover .wp-block-cover__inner-container {
   width: auto;
 }
 
-/* line 92, resources/assets/styles/components/_wp-classes.scss */
+/* line 102, resources/assets/styles/components/_wp-classes.scss */
 
 .alignnone {
   margin-left: 0;
@@ -16839,7 +16861,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 99, resources/assets/styles/components/_wp-classes.scss */
+/* line 109, resources/assets/styles/components/_wp-classes.scss */
 
 .aligncenter {
   display: block;
@@ -16847,7 +16869,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 105, resources/assets/styles/components/_wp-classes.scss */
+/* line 115, resources/assets/styles/components/_wp-classes.scss */
 
 .alignleft,
 .alignright {
@@ -16856,39 +16878,19 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 576px) {
-  /* line 112, resources/assets/styles/components/_wp-classes.scss */
+  /* line 122, resources/assets/styles/components/_wp-classes.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.5rem;
   }
 
-  /* line 117, resources/assets/styles/components/_wp-classes.scss */
+  /* line 127, resources/assets/styles/components/_wp-classes.scss */
 
   .alignright {
     float: right;
     margin-left: 0.5rem;
   }
-}
-
-/* line 1, resources/assets/styles/layouts/_header.scss */
-
-.navbar-top {
-  min-height: 50px;
-}
-
-@media (min-width: 992px) {
-  /* line 1, resources/assets/styles/layouts/_header.scss */
-
-  .navbar-top {
-    min-height: 72px;
-  }
-}
-
-/* line 1, resources/assets/styles/layouts/_tinymce.scss */
-
-body#tinymce {
-  margin: 12px !important;
 }
 
 /* line 4, resources/assets/styles/theme/typography.scss */
@@ -16920,13 +16922,6 @@ h6 {
 
 .entry-summary p:last-child {
   margin-bottom: 0;
-}
-
-/* line 7, resources/assets/styles/_hacks.scss */
-
-.homepage-banner {
-  margin-left: -1rem;
-  margin-right: -1rem;
 }
 
 

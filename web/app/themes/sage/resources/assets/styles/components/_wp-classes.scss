@@ -39,16 +39,26 @@
     margin-bottom: 0;
   }
 
-  // Image should be constrained by container's width and should maintain
-  // its aspect ratio.
+  // Image is constrained by container's width, maintains its aspect ratio and
+  // is centred when narrower than its container.
   img {
     display: block;
     height: auto;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
+  // Add spacing between image and caption.
   figcaption {
     margin-top: 15px;
+  }
+
+  // Center figcaption when image is centered.
+  &.aligncenter {
+    figcaption {
+      text-align: center;
+    }
   }
 }
 
