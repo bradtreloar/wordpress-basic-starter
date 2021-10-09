@@ -49,13 +49,11 @@
     "roots/wp-config": "1.0.0",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/advanced-custom-fields": "^5.9",
-    "wpackagist-plugin/wp-bootstrap-blocks": "^3.1",
     "wpackagist-plugin/contact-form-7": "^5.4",
+    "wpackagist-plugin/wp-bootstrap-blocks": "^3.1",
     "wpackagist-plugin/wp-optimize": "^3.1",
-    "wp-cli/wp-cli-bundle": "^2.5",
-    "wpackagist-plugin/wp-cfm": "^1.7",
-    "wpackagist-plugin/google-site-kit": "^1.35",
-    "wpackagist-plugin/wordpress-seo": "^16.6"
+    "wpackagist-plugin/wordpress-seo": "^16.6",
+    "wp-cli/wp-cli-bundle": "^2.5"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.6.0",
