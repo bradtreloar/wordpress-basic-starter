@@ -7,8 +7,8 @@
   "authors": [
     {
       "name": "Brad Treloar",
-      "email": "brad.treloar@pm.me",
-    },
+      "email": "brad.treloar@pm.me"
+    }
   ],
   "autoload": {
     "psr-4": {
