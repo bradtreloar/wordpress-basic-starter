@@ -6,6 +6,11 @@
   > *:not(.alignfull):not(.alignwide) {
     @include make-container();
     @include make-container-max-widths();
+
+    &.wp-block-quote {
+      padding-left: $spacer * 2;
+      padding-right: $spacer * 2;
+    }
   }
 
   > *.alignwide {
@@ -158,6 +163,10 @@
 /// Blockquote
 .wp-block-quote {
   @extend .blockquote;
+
+  border-left: solid 0 transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
 
   cite {
     @extend .blockquote-footer;

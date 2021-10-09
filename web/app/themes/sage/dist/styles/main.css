@@ -659,7 +659,7 @@ mark,
 .blockquote,
 .wp-block-quote {
   margin-bottom: 1rem;
-  font-size: 1rem;
+  font-size: 1.25rem;
 }
 
 /* line 117, node_modules/bootstrap/scss/_type.scss */
@@ -16719,7 +16719,14 @@ body.chocolat-open > .chocolat-image-wrapper {
   }
 }
 
-/* line 11, resources/assets/styles/components/_wp-classes.scss */
+/* line 10, resources/assets/styles/components/_wp-classes.scss */
+
+.main > .content > *:not(.alignfull):not(.alignwide).wp-block-quote {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* line 16, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > *.alignwide {
   width: 100%;
@@ -16730,7 +16737,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 576px) {
-  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+  /* line 16, resources/assets/styles/components/_wp-classes.scss */
 
   .main > .content > *.alignwide {
     max-width: 540px;
@@ -16738,7 +16745,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 768px) {
-  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+  /* line 16, resources/assets/styles/components/_wp-classes.scss */
 
   .main > .content > *.alignwide {
     max-width: 720px;
@@ -16746,7 +16753,7 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 992px) {
-  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+  /* line 16, resources/assets/styles/components/_wp-classes.scss */
 
   .main > .content > *.alignwide {
     max-width: 960px;
@@ -16754,34 +16761,34 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 1200px) {
-  /* line 11, resources/assets/styles/components/_wp-classes.scss */
+  /* line 16, resources/assets/styles/components/_wp-classes.scss */
 
   .main > .content > *.alignwide {
     max-width: 1140px;
   }
 }
 
-/* line 24, resources/assets/styles/components/_wp-classes.scss */
+/* line 29, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > ul,
 .main > .content > ol {
   padding-left: 40px !important;
 }
 
-/* line 31, resources/assets/styles/components/_wp-classes.scss */
+/* line 36, resources/assets/styles/components/_wp-classes.scss */
 
 .main > .content > .wp-block-columns {
   padding-left: 0;
   padding-right: 0;
 }
 
-/* line 38, resources/assets/styles/components/_wp-classes.scss */
+/* line 43, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image:first-child:last-child {
   margin-bottom: 0;
 }
 
-/* line 44, resources/assets/styles/components/_wp-classes.scss */
+/* line 49, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image img {
   display: block;
@@ -16791,19 +16798,19 @@ body.chocolat-open > .chocolat-image-wrapper {
   margin-right: auto;
 }
 
-/* line 53, resources/assets/styles/components/_wp-classes.scss */
+/* line 58, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image figcaption {
   margin-top: 15px;
 }
 
-/* line 59, resources/assets/styles/components/_wp-classes.scss */
+/* line 64, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-image.aligncenter figcaption {
   text-align: center;
 }
 
-/* line 66, resources/assets/styles/components/_wp-classes.scss */
+/* line 71, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper {
   position: relative;
@@ -16814,7 +16821,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   overflow: hidden;
 }
 
-/* line 74, resources/assets/styles/components/_wp-classes.scss */
+/* line 79, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-embed__wrapper iframe {
   position: absolute;
@@ -16824,14 +16831,14 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: 100%;
 }
 
-/* line 84, resources/assets/styles/components/_wp-classes.scss */
+/* line 89, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover {
   padding: 1rem !important;
 }
 
 @media (min-width: 576px) {
-  /* line 84, resources/assets/styles/components/_wp-classes.scss */
+  /* line 89, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 1.5rem !important;
@@ -16839,20 +16846,20 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 992px) {
-  /* line 84, resources/assets/styles/components/_wp-classes.scss */
+  /* line 89, resources/assets/styles/components/_wp-classes.scss */
 
   .wp-block-cover {
     padding: 3rem !important;
   }
 }
 
-/* line 96, resources/assets/styles/components/_wp-classes.scss */
+/* line 101, resources/assets/styles/components/_wp-classes.scss */
 
 .wp-block-cover .wp-block-cover__inner-container {
   width: auto;
 }
 
-/* line 102, resources/assets/styles/components/_wp-classes.scss */
+/* line 107, resources/assets/styles/components/_wp-classes.scss */
 
 .alignnone {
   margin-left: 0;
@@ -16861,7 +16868,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 109, resources/assets/styles/components/_wp-classes.scss */
+/* line 114, resources/assets/styles/components/_wp-classes.scss */
 
 .aligncenter {
   display: block;
@@ -16869,7 +16876,7 @@ body.chocolat-open > .chocolat-image-wrapper {
   height: auto;
 }
 
-/* line 115, resources/assets/styles/components/_wp-classes.scss */
+/* line 120, resources/assets/styles/components/_wp-classes.scss */
 
 .alignleft,
 .alignright {
@@ -16878,19 +16885,27 @@ body.chocolat-open > .chocolat-image-wrapper {
 }
 
 @media (min-width: 576px) {
-  /* line 122, resources/assets/styles/components/_wp-classes.scss */
+  /* line 127, resources/assets/styles/components/_wp-classes.scss */
 
   .alignleft {
     float: left;
     margin-right: 0.5rem;
   }
 
-  /* line 127, resources/assets/styles/components/_wp-classes.scss */
+  /* line 132, resources/assets/styles/components/_wp-classes.scss */
 
   .alignright {
     float: right;
     margin-left: 0.5rem;
   }
+}
+
+/* line 164, resources/assets/styles/components/_wp-classes.scss */
+
+.wp-block-quote {
+  border-left: solid 0 transparent;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 /* line 4, resources/assets/styles/theme/typography.scss */
